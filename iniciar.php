@@ -25,7 +25,7 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['pass'])){
 </script>
 	<?php
 	if($codCliente == 1){
-	$queryInsert= "UPDATE `dbBrowserRPG`.`tbUser` SET `penalidade` = '1', `fimPena` = '".date('Y/m/d H:i:s', strtotime("+1 hour",strtotime($data1)))."' WHERE `tbUser`.`user` = '$user';";//sql
+	$queryInsert= "UPDATE `dbBrowserRPG`.`tbUser` SET `penalidade` = '1', `fimPena` = '".date('Y/m/d H:i:s', strtotime("10 seconds",strtotime($data1)))."' WHERE `tbUser`.`user` = '$user';";//sql
 		$Inserir = $pdo->prepare($queryInsert);
 			$Inserir->execute();
 				$VerificarInsert = $Inserir->rowCount();

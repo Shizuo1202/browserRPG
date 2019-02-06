@@ -73,7 +73,6 @@ else{
 			</table>
 		</div>
 		<div id="pageTreino">
-			<?php include("treinar.php"); ?>
 		</div>
 	</body>
 </html>
