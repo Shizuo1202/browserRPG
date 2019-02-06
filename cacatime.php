@@ -2,38 +2,9 @@
 include("conexao.php");
 session_start();
 if(!isset($_SESSION['user']) && !isset($_SESSION['pass'])){
-?>
-<html>
-	<head>
-		<link href="style/index.css" rel="stylesheet">
-		<title>Browser RPG - Início</title>
-	</head>
-	<body>
-		<div id="topoOff">
-			<table class="indicadores">
-			  <tr>
-			  	<td rowspan="3" style="font-size: 50px; width: 60%;">BrowserRPG</td>
-			    <td>Usuário:</td>
-			    <td>Senha:</td>
-			  </tr>
-			  <tr>
-			  	<form name="flogin" class="flogin" action="validaLogin.php" method="post">
-			    <td><input type="text" name="fuser"></td>
-			    <td><input type="password" name="fpass"></td>
-			    <td><input type="submit" value="Entrar"><br></td>
-				</form>
-			  </tr>
-			  <tr>
-			  	<td><a href="esqueceuSenha.php" class="esqueceu">Esqueceu a conta?</a></td>
-			  </tr>
-			</table>
-			</form>
-		</div>
-	</body>
-</html>
-<?php
-	}
-	else{
+	header('location: index.php');
+}
+else{
 	$user = $_SESSION['user'];
 	$querySelect= "SELECT * FROM `tbUser` WHERE `user` = '$user'";//sql
 	$select = $pdo->prepare($querySelect);//insert
@@ -54,6 +25,7 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['pass'])){
 <html>
 	<head>
 		<link href="style/index.css" rel="stylesheet">
+		<link href="style/cacatime.css" rel="stylesheet">
 		<title>Browser RPG - Início</title>
 	</head>
 	<body>
@@ -95,6 +67,9 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['pass'])){
 					<td><a href="cacatime.php">Caçadas por tempo</a></td>
 				</tr>
 			</table>
+		</div>
+		<div id="pageCacaTime">
+			
 		</div>
 	</body>
 </html>
