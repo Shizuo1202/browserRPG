@@ -94,6 +94,9 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['pass'])){
 				<tr>
 					<td><a href="cacatime.php">Caçadas por tempo</a></td>
 				</tr>
+				<tr>
+					<td><a href="treino.php">Treino</a></td>
+				</tr>
 			</table>
 		</div>
 	</body>

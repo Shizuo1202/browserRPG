@@ -70,7 +70,7 @@ else{
 			</table>
 		</div>
 		<div id="pageCacaTime">
-			<?php include("time.php"); ?>
+			<?php include("treinar.php"); ?>
 		</div>
 	</body>
 </html>

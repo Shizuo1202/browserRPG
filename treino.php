@@ -26,7 +26,7 @@ else{
 <html>
 	<head>
 		<link href="style/index.css" rel="stylesheet">
-		<link href="style/cacatime.css" rel="stylesheet">
+		<link href="style/treino.css" rel="stylesheet">
 		<title>Browser RPG - Início</title>
 	</head>
 	<body>
@@ -67,10 +67,13 @@ else{
 				<tr>
 					<td><a href="cacatime.php">Caçadas por tempo</a></td>
 				</tr>
+				<tr>
+					<td><a href="treino.php">Treino</a></td>
+				</tr>
 			</table>
 		</div>
-		<div id="pageCacaTime">
-			<?php include("time.php"); ?>
+		<div id="pageTreino">
+			<?php include("treinar.php"); ?>
 		</div>
 	</body>
 </html>
