@@ -5,7 +5,7 @@ body{
 #topoOff{
 	width: 100%;
 	height: 15%;
-	background-color: #66a8f7;
+	background-color: #064733;
 	font-weight: bolder;
 	position: fixed;
     top:0;
@@ -17,7 +17,7 @@ body{
 #topoOn{
 	width: 100%;
 	height: 20%;
-	background-color: #66a8f7;
+	background-color: #064733;
 	font-weight: bolder;
 	position: fixed;
     top:0;
@@ -63,7 +63,7 @@ a:active {
 #menu{
 	margin-top: 9%;
 	width: 20%;
-	background-color: #c3dee2;
+	background-color: #69C562;
 	height: 1000px;
 	margin-left: -1%;
 	border-right-width: medium;
@@ -77,4 +77,13 @@ a:active {
 .menu{
 	width: 100%;
 	text-align: center;
+}
+.formCadastro{
+	margin-top: 6%;
+	width: 101.5%;
+	background-color: #69C562;
+	height: auto;
+	margin-left: -1%;
+  	float: left;
+  	text-align: right;
 }
